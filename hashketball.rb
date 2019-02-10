@@ -1,4 +1,6 @@
 # Write your code here!
+require 'pry'
+
 def game_hash
   g_hash = {
     :home => {
@@ -116,3 +118,4 @@ def game_hash
   }
 
 end
+
