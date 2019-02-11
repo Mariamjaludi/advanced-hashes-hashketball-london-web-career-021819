@@ -200,7 +200,7 @@ def player_stats(player_name)
         attributes
       end
     end
-      
+
     end
 
 end
