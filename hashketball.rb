@@ -193,7 +193,7 @@ end
 
 def player_stats(name)
   hash = game_hash
-  
+
   hash.collect do |location, team_data|
       if team_data[:team_name] == name
         team_data[:players].each do |name, attributes|
@@ -201,5 +201,5 @@ def player_stats(name)
         end
       end
     end
-  
+
 end
