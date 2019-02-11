@@ -176,5 +176,4 @@ def team_names
   hash.collect do |location, team_data|
     team_data[:team_name]
   end
-
 end
