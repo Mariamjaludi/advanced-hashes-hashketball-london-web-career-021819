@@ -188,6 +188,5 @@ def player_numbers(name)
         end
       end
     end
-  end
-  result
+    result
 end
