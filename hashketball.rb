@@ -196,7 +196,7 @@ def player_stats(name)
 
   hash.collect do |location, team_data|
       if team_data[:team_name] == name
-        team_data[:players].each do |name, attributes|
+        team_data[:players].collect do |name, attributes|
           attributes
         end
       end
