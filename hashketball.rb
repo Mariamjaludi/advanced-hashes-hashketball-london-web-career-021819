@@ -187,6 +187,6 @@ def player_numbers(name)
       team_data[:players].each do |name, attributes|
     binding.pry
 
-    
+  end
   end
 end
