@@ -193,10 +193,8 @@ end
 
 def player_stats(player_name)
   hash = game_hash
-  result = {}
   hash.each do |location, team_data|
     team_data[:players].each do |name, attributes|
-
       if player_name == name
         return attributes
       end
