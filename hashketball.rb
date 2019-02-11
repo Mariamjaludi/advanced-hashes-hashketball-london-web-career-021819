@@ -139,6 +139,7 @@ end
 def num_points_scored(player_name)
   hash = game_hash
   hash.each do |location, team_data| #location is home or away
+    binding.pry
       team_data.each do | attribute, data|
         data[:players].each do |data_item|
           if data_item.to_s == player_name
