@@ -196,6 +196,7 @@ def player_stats(player_name)
 
   hash.each do |location, team_data|
     team_data[:players].collect do |name, attributes|
+      binding.pry
       if player_name == name
         attributes
       end
