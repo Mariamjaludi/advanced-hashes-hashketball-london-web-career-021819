@@ -193,15 +193,14 @@ end
 
 def player_stats(player_name)
   hash = game_hash
-
+  result = {}
   hash.each do |location, team_data|
-    team_data[:players].collect do |name, attributes|
+    team_data[:players].each do |name, attributes|
       binding.pry
       if player_name == name
-        attributes
+        results.push(attributes)
       end
     end
-
-    end
-
+  end
+  results
 end
