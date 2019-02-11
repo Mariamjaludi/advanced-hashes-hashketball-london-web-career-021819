@@ -206,7 +206,7 @@ end
 def big_shoe_rebounds
   hash = game_hash
   shoe_size = 0
-  big_foot = ""
+  big_foot_rebounds = ""
   hash.each do |location, team_data|
     team_data[:players].each do |name, attributes|
 
