@@ -135,4 +135,16 @@ def good_practices
   end
 
 end
-good_practices
+
+def num_points_scored(player_name)
+  hash = game_hash
+  hash.each do |location, team_data| #location is home or away
+      team_data.each do | attribute, data|
+        data[:players].each do |data_item|
+          if data_item == player_name
+            return data_item[:points]
+          end  
+        end
+      end
+  end
+end
