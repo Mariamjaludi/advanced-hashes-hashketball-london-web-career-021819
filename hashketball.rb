@@ -209,7 +209,7 @@ def big_shoe_rebounds
   big_foot = ""
   hash.each do |location, team_data|
     team_data[:players].each do |name, attributes|
-      binding.pry
+
       if attributes[:shoe] > shoe_size
         shoe_size = attributes[:shoe]
         big_foot = name
