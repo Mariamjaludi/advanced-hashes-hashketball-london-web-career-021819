@@ -183,9 +183,11 @@ def player_numbers(name)
   result = []
   hash.each do |location, team_data|
 
-    #if team_data[:team_name] == name
+    if team_data[:team_name] == name
       team_data[:players].each do |name, attributes|
-    binding.pry
+        result.push(attributes[:number])
+      end
+    end
 
   end
   end
